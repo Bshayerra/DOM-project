@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>DOM</title>
+  </head>
+
+  <body>
+    <div id="first-div">
+
+    <h1>Programming Languages</h1>
+
+    <ul>
+    <li id="first-li">HTML</li>
+    <li id="second-li">CSS</li>
+    <li id="last-li">JavaScript</li>
+    </ul>
+
+    </div>
+
+<script>   
+
+let CSS = document.getElementById('second-li'); <!--get element by id-->
+console.log(CSS);
+
+let andriod = document.querySelector("#first-li") //inner text function
+andriod.innerText ="Java"
+
+let a = document.querySelector("#second-li") //style function
+a.style.color ="Red"
+a.style.background ="#F9F3CC"
+a.style.textAlign = "center"
+
+</script>
+
+</html>

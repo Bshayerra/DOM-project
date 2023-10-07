@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>DOM</title>
+  </head>
+
+  <body>
+    <div id="first-div">
+
+    <h1>Programming Languages</h1>
+
+    <ul class="langueges">
+    <li>HTML</li>
+    <p>HyperText Markup Language </p>
+    <li>CSS</li>
+    <p>Cascading Style Sheets</p>
+    <li>JavaScript</li>
+    </ul>
+
+    </div>
+
+<script>
+       
+let list = document.getElementsByTagName('li'); 
+console.log(list);
+
+let text = document.querySelectorAll('.p-languages')//uery selector all function
+console.log(text)
+
+let languageList = document.querySelector(".p-langueges")//create element function
+let ruby = document.createElement("li")
+ruby.innerText="Ruby"
+languageList.append(ruby)
+console.log(languageList)
+
+let langList = document.querySelector(".langueges")//remove function
+let ios = document.querySelectorAll("li")[1]
+//ios.remove()
+console.log(legList)
+
+
+</script>
+
+  </body>
+</html>
